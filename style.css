@@ -1,0 +1,166 @@
+:root {
+    --background: rgb(51, 51, 51)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+/* =============== HEADER ===========================*/
+
+.header {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    padding: 1em 0;
+    z-index: 100;
+}
+
+.header .container {
+    width: 55%;
+    margin: 0 auto;
+}
+
+.header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header li a {
+    text-transform: uppercase;
+}
+
+.header .logo {
+    float: left;
+}
+
+.header nav {
+    float: right;
+}
+
+.header nav a:hover {
+    color: #fff;
+}
+
+.header nav a::before {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+.header nav a:hover::before {
+    width: 100%;
+}
+
+.header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header nav li {
+    display: inline-block;
+    margin-left: 1.5em;
+    padding-top: 0.5em;
+    position: relative;
+}
+
+/* =============== HOME: LANDING ===========================*/
+
+#landing {
+    background-image: url(./pictures/background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+
+.land img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#rocket {
+    transform: translateY(80px);
+}
+
+.land h1 {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-size: 4em;
+    margin-top: 100px;
+    letter-spacing: .03em;
+}
+
+.land .button {
+    text-align: center;
+    padding-top: 20px;
+    transform: translateX(-13px);
+}
+
+.land .button a {
+    color: var(--background);
+    background-color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 8px 40px;
+    border-radius: 40px;
+
+}
+
+
+/* =============== INDEX: ABOUT-ME ===========================*/
+
+#about-me {
+    margin-top: 100px;
+    height: 100vh;
+    width: 100vw;
+}
+
+.about-me h1 {
+    text-align: center;
+    font-size: 4em;
+    
+}
+
+.about-me a {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    background-color: var(--background);
+    padding: 8px 30px;
+    border-radius: 40px;
+}
+
+
+
+
+/* =============== MEDIA ADJUSTMENTS ===========================*/
+
