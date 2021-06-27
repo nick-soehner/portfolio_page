@@ -139,7 +139,8 @@ body {
 /* =============== INDEX: ABOUT-ME ===========================*/
 
 #about-me {
-    margin-top: 100px;
+    margin: 0;
+    padding-top: 100px;
     height: 100vh;
     width: 100vw;
 }
@@ -150,17 +151,32 @@ body {
     
 }
 
-.about-me a {
-    position: relative;
-    text-align: center;
-    color: #fff;
-    background-color: var(--background);
-    padding: 8px 30px;
-    border-radius: 40px;
+.about-me .textbox {
+    margin: 50px 400px;
 }
 
+.about-me p {
+    text-align: justify;
+    font-size: 1.5em;
+    max-height: 500px;
+    overflow: auto;
+}
 
 
 
 /* =============== MEDIA ADJUSTMENTS ===========================*/
 
+@media only screen and (max-width: 1120px) {
+    .about-me .textbox {
+        margin: 50px;
+    }
+}
+
+@media only screen and (max-width: 715px) {
+    .header .logo {
+        display: none;
+    }
+    .header nav {
+        float: none;
+    }
+}

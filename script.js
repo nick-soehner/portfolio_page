@@ -6,6 +6,6 @@ let whiteClouds = document.getElementById('white-clouds');
 window.addEventListener('scroll', function() {
     let value = window.scrollY;
     rocket.style.top = value * -.8 + 'px';
-    grayClouds.style.top = value * -.14 + 'px';
-    lightClouds.style.top = value * -.02 + 'px';
+    grayClouds.style.top = value * -.1 + 'px';
+    lightClouds.style.top = value * -.001 + 'px';
 })
