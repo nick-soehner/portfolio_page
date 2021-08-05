@@ -11,7 +11,7 @@
 <body>
     <main>
         <section id="landing">
-            <div class="header">
+            <header>
                 <div class="container">
                     <div class="logo">
                         <a href="./index.html"><h1>Nick Soehner</h1></a>
@@ -19,13 +19,14 @@
         
                     <nav>
                         <ul>
-                            <li><a href="#landing">Home</a></li>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="#skills">Skills</a></li>
                             <li><a href="#about-me">About</a></li>
                             <li><a href="./index.html">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
-            </div>
+            </header>
             <div class="land">
                 <img src="./pictures/gray clouds.png" alt="gray clouds" id="gray-clouds">
                 <img src="./pictures/rocket.png" alt="rocket" id="rocket">
@@ -34,24 +35,48 @@
                 <h1>Always Innovating</h1>
             </div>
         </section>
-        <section id="about-me">
-            <h1>About Me</h1>
-            <div class="container">
-                <div class="one">
-                    <p>Hello! My name is Nick Soehner!</p>
-                    <p>I am a college student venturing into the world of web devlopment. I started programming in 2019 and have finally pushed myself to making it my career.</p>
-                    <p>I have had many jobs in my short adult life and are finally looking forward to settling into a profession I love!</p>
-                    <p>I hope to push myself to the edge of what coding is today and make it what it will be in the future.</p>
-                </div>
-                <div class="picture">
-                    <img src="./pictures/jupiter.png" alt="html icon">
-                </div>
-            </div>
-        </section>
         <section id="skills">
             <h1>Skills</h1>
+            <div class="container">
+                <div class="card">
+                    <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img src="./pictures/html-icon.png" alt="html icon"></a>
+                </div>
+                <div class="card">
+                    <a target="_blank" href="https://www.javascript.com/"><img src="./pictures/js-icon.png" alt="javascript icon"></a>
+                </div>
+                <div class="card">
+                    <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="./pictures/css-icon.png" alt="css icon"></a>
+                </div>
+                <div class="card">
+                    <a target="_blank" href="https://github.com/"><img src="./pictures/github-icon.png" alt="github icon"></a>
+                </div>
+                <div class="card">
+                    <a target="_blank" href="https://www.python.org/"><img src="./pictures/python-icon.png" alt="python icon"></a>
+                </div>
+            </div>
+            <p>As a full stack devloper I want to be able to have a hands on with every aspect of a job. As I have just started out I have really found enjoyment in the front-end and making webpages pop and giving style to websites!</p>
+        </section>
+        <section id="about-me">
+            <h1>About Me</h1>
+                <div class="container">
+                    <div class="card">
+                        <div class="content">
+                            <p>My name is Nick Soehner.</p>
+                            <p>I am a college student venturing into the world of web devlopment. I started programming in 2019 and have finally pushed myself into making it my career.</p>
+                            <p>I have had many jobs in my short adult life and are finally looking forward to settling into a profession I love!</p>
+                            <p>I hope to push myself to the edge of what coding is today and help make it what it will be in the future!</p>
+                        </div>
+                    </div>
+                </div>
         </section>
         <script src="./script.js"></script>
+        <script type="text/javascript" src="vanilla-tilt.js"></script>
+        <script type="text/javascript">
+            VanillaTilt.init(document.querySelectorAll(".card"), {
+                max: 15,
+                speed: 400
+            });
+        </script>
     </main>
     
 </body>

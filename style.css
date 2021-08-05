@@ -16,43 +16,48 @@ body {
 
 /* =============== HEADER ===========================*/
 
-.header {
+header {
     position: relative;
     left: 0;
     top: 0;
     width: 100%;
     background-color: transparent;
-    padding: 1em 0;
+    padding: 1.5em 0;
     z-index: 100;
 }
 
-.header .container {
+header .container {
     width: 55%;
     margin: 0 auto;
 }
 
-.header a {
+header a {
     text-decoration: none;
     color: #fff;
+    text-shadow: #5e5e5e 2px 1px;
 }
 
-.header li a {
+header h1 {
+    letter-spacing: 2px;
+}
+
+header li a {
     text-transform: uppercase;
 }
 
-.header .logo {
+header .logo {
     float: left;
 }
 
-.header nav {
+header nav {
     float: right;
 }
 
-.header nav a:hover {
+header nav a:hover {
     color: #fff;
 }
 
-.header nav a::before {
+header nav a::before {
     content: '';
     display: block;
     height: 2px;
@@ -64,30 +69,30 @@ body {
     transition: all ease-in-out 250ms;
 }
 
-.header nav a:hover::before {
+header nav a:hover::before {
     width: 100%;
 }
 
-.header::after {
+header::after {
     content: '';
     display: table;
     clear: both;
 }
 
-.header nav ul {
+header nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.header nav li {
+header nav li {
     display: inline-block;
     margin-left: 1.5em;
     padding-top: 0.5em;
     position: relative;
 }
 
-/* =============== HOME: LANDING ===========================*/
+/* =============== LANDING ===========================*/
 
 #landing {
     background-image: url(./pictures/background.png);
@@ -118,68 +123,112 @@ body {
     font-size: 4em;
     margin-top: 120px;
     letter-spacing: .04em;
-}
-
-
-/* =============== INDEX: ABOUT-ME ===========================*/
-
-#about-me {
-    margin: 0;
-    padding-top: 100px;
-    height: 80vh;
-    width: 100vw;
-}
-
-#about-me h1 {
-    text-align: center;
-    font-size: 4em;
-}
-
-#about-me .container {
-    width: 70%;
-    min-width: 500px;
-    max-height: 500px;
-    overflow: auto;
-    margin: 30px auto;
-    display: grid;
-    grid-template-columns: 800px 100px;
-    align-items: center;
-    justify-items: center;
-    column-gap: 50px;
-}
-
-#about-me .container .one {
-    min-width: 800px;
-    max-height: 500px;
-    overflow: auto;
-}
-
-#about-me .container p {
-    margin-top: 10px;
-    padding: 10px 60px;
-    text-align: inherit;
-    font-size: 24px;
-    line-height: 1.4em;
-}
-
-#about-me .container img {
-    width: 350px;
-}
-
-#about-me .container .picture {
-    justify-self: start;
+    text-shadow: #5e5e5e 3px 2px;
 }
 
 
 /* =============== SKILLS ===========================*/
 
 #skills {
+    margin: 0;
+    padding-top: 100px;
+    height: 60vh;
+    width: 100vw;
+}
+
+#skills h1 {
+    text-align: center;
+    color: black;
+    font-size: 4em;
+    letter-spacing: .04em;
+    text-shadow: #d4d4d4 3px 2px;
+}
+
+#skills .container {
+    width: 55%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#skills .container img {
+    width: 150px;
+}
+
+#skills p {
+    width: 55%;
+    margin: 50px auto;
+    padding: 10px 60px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.4em;
+    color: black;
+    min-width: 700px;
+}
+
+
+/* =============== ABOUT ME ===========================*/
+
+#about-me {
     background-image: url(./pictures/background2.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
+}
+
+#about-me {
+    padding-top: 300px;
+}
+
+#about-me h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 4em;
+    letter-spacing: .04em;
+    text-shadow: #5e5e5e 3px 2px;
+}
+
+#about-me .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1600px;            /* holding it to the left */
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+#about-me .container .card {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+#about-me .container .card .content {
+    padding: 20px;
+    transition: 0.5s;
+}
+
+#about-me .container p {
+    padding: 10px 60px;
+    text-align: inherit;
+    font-size: 24px;
+    line-height: 1.4em;
+    color: white;
 }
 
 /* =============== MEDIA ADJUSTMENTS ===========================*/
