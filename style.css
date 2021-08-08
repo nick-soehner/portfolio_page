@@ -317,6 +317,43 @@ header nav li {
     text-decoration: none;
 }
 
+
+/* =============== WORKS ===========================*/
+
+footer {
+    background-image: url(./pictures/background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 12vh;
+}
+
+footer .container {
+    width: 55%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 2em;
+    letter-spacing: .1em;
+    padding-bottom: 20px;
+}
+
+footer h2 {
+    text-decoration: none;
+    color: #fff;
+    text-shadow: #5e5e5e 2px 1px;
+}
+
+footer h3 {
+    text-decoration: none;
+    color: #fff;
+    text-shadow: #5e5e5e 2px 1px;
+}
+
+footer .copyright {
+    position: relative;
+    float: center;
+}
+
 /* =============== MEDIA ADJUSTMENTS ===========================*/
 
 @media only screen and (max-width: 715px) {
