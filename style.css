@@ -349,6 +349,12 @@ footer h3 {
     text-shadow: #5e5e5e 2px 1px;
 }
 
+footer h6 {
+    text-decoration: none;
+    color: #fff;
+    text-shadow: #5e5e5e 2px 1px;
+}
+
 footer .copyright {
     position: relative;
     float: center;
