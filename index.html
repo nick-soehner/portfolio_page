@@ -1,109 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nick Soehner</title>
     <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <main>
-        <section id="landing">
-            <header>
-                <div class="container">
-                    <div class="logo">
-                        <a href="./index.html"><h1>Nick Soehner</h1></a>
-                    </div>
-        
-                    <nav>
-                        <ul>
-                            <li><a href="./index.html">Home</a></li>
-                            <li><a href="#skills">Skills</a></li>
-                            <li><a href="#about-me">About</a></li>
-                            <li><a href="#works">Works</a></li>
-                            <li><a href="./index.html">Contact</a></li>
-                        </ul>
-                    </nav>
+        <header id="header">
+            <div class="container">
+                <div class="logo">
+                    <a href="./index.html">
+                        <h1>nick soehner</h1>
+                    </a>
                 </div>
-            </header>
+
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">home</a></li>
+                        <li><a href="#skills">skills</a></li>
+                        <li><a href="#about-me">about</a></li>
+                        <li><a href="#works">projects</a></li>
+                        <li><a href="./index.html">contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section id="landing">
             <div class="land">
-                <img src="./pictures/gray clouds.png" alt="gray clouds" id="gray-clouds">
+                <img src="./pictures/gray clouds.png" alt="gray clouds" id="gray-clouds" class="cloud">
                 <img src="./pictures/rocket.png" alt="rocket" id="rocket">
-                <img src="./pictures/light gray clouds.png" alt="light-clouds" id="light-clouds">
-                <img src="./pictures/white clouds.png" alt="white clouds" id="white-clouds">
-                <h1>Always Innovating</h1>
+                <img src="./pictures/light gray clouds.png" alt="light-clouds" id="light-clouds" class="cloud">
+                <img src="./pictures/white clouds.png" alt="white clouds" id="white-clouds" class="cloud">
+                <h1>always innovating</h1>
             </div>
         </section>
         <section id="skills">
-            <h1>Skills</h1>
-            <div class="container">
-                <div class="card">
-                    <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img src="./pictures/html-icon.png" alt="html icon"></a>
-                </div>
-                <div class="card">
-                    <a target="_blank" href="https://www.javascript.com/"><img src="./pictures/js-icon.png" alt="javascript icon"></a>
-                </div>
-                <div class="card">
-                    <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="./pictures/css-icon.png" alt="css icon"></a>
-                </div>
-                <div class="card">
-                    <a target="_blank" href="https://github.com/"><img src="./pictures/github-icon.png" alt="github icon"></a>
-                </div>
-                <div class="card">
-                    <a target="_blank" href="https://www.python.org/"><img src="./pictures/python-icon.png" alt="python icon"></a>
-                </div>
-            </div>
-            <p>As a full stack devloper I want to be able to have a hands on with every aspect of a job. As I have just started out I have really found enjoyment in the front-end and making webpages pop and giving style to websites!</p>
+            <h1>skills</h1>
         </section>
         <section id="about-me">
-            <h1>About Me</h1>
-                <div class="container">
-                    <div class="card">
-                        <div class="content">
-                            <p>My name is Nick Soehner.</p>
-                            <p>I am a college student venturing into the world of web devlopment. I started programming in 2019 and have finally pushed myself into making it my career.</p>
-                            <p>I have had many jobs in my short adult life and am finally looking forward to settling into a profession I love!</p>
-                            <p>I hope to push myself to the edge of what coding is today and help make it what it will be in the future!</p>
-                        </div>
-                    </div>
-                </div>
+            <h1>about me</h1>
         </section>
         <section id='works'>
-            <h1>Works</h1>
-            <div class="cards">
-                <a href="https://github.com/nick-soehner/Random-Intergalactic-Travel" target="_blank">
-                    <div class="container">
-                        <div class="card">
-                            <div class="content">
-                                <img src="./pictures/icons8-alien-100.png" alt="alien">
-                                <p>Random Intergalactic Travel</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a target="_blank" href="https://github.com/nick-soehner/tea-cozy">
-                    <div class="container">
-                        <div class="card">
-                            <div class="content">
-                                <img src="./pictures/icons8-tea-100.png" alt="tea cup">
-                                <p>Tea-Cozy</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="https://github.com/nick-soehner/excursion-project" target="_blank">
-                    <div class="container">
-                        <div class="card">
-                            <div class="content">
-                                <img src="./pictures/icons8-mountain-100.png" alt="mountains">
-                                <p>Excurson Project</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
+            <h1>projects</h1>
         </section>
         <footer>
             <div class="container">
@@ -115,14 +61,8 @@
             </div>
         </footer>
         <script src="./script.js"></script>
-        <script type="text/javascript" src="vanilla-tilt.js"></script>
-        <script type="text/javascript">
-            VanillaTilt.init(document.querySelectorAll(".card"), {
-                max: 15,
-                speed: 400
-            });
-        </script>
     </main>
-    
+
 </body>
+
 </html>
