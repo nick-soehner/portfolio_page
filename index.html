@@ -25,8 +25,8 @@
                 <nav>
                     <ul>
                         <li><a href="./index.html">home</a></li>
-                        <li><a href="#skills">skills</a></li>
                         <li><a href="#about-me">about</a></li>
+                        <li><a href="#skills">skills</a></li>
                         <li><a href="#works">projects</a></li>
                         <li><a href="./index.html">contact</a></li>
                     </ul>
@@ -42,14 +42,103 @@
                 <h1>always innovating</h1>
             </div>
         </section>
-        <section id="skills">
-            <h1>skills</h1>
-        </section>
         <section id="about-me">
             <h1>about me</h1>
+            <div class="container">
+                <div class="headshot">
+                    <img src="./pictures/mars.png" alt="">
+                </div>
+                <div class="about-text">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, id. Aliquam minus
+                        excepturi possimus voluptate a id sapiente repellat. Rem deleniti iure eligendi dolorum
+                        perferendis, at accusamus repudiandae veritatis voluptas.</p>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <h1>skills</h1>
+            <div class="wrapper">
+                <div class="flex-column">
+                    <div class="outer-box">
+                        <div class="inner-box html">
+                            <div class="box"></div>
+                        </div>
+                    </div>
+                    <div class="outer-box">
+                        <div class="inner-box css">
+                            <div class="box"></div>
+                        </div>
+                    </div>
+                    <div class="outer-box">
+                        <div class="inner-box js">
+                            <div class="box"></div>
+                        </div>
+                    </div>
+                    <div class="outer-box">
+                        <div class="inner-box git">
+                            <div class="box"></div>
+                        </div>
+                    </div>
+                    <div class="outer-box">
+                        <div class="inner-box photoshop">
+                            <div class="box"></div>
+                        </div>
+                    </div>
+                    <div class="outer-box">
+                        <div class="inner-box react">
+                            <div class="box"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-column">
+                    <img src="./pictures/html5-brands.svg" alt="">
+                    <img src="./pictures/css3-alt-brands.svg" alt="">
+                    <img src="./pictures/js-square-brands.svg" alt="">
+                    <img src="./pictures/github-brands.svg" alt="">
+                    <img class="ps" src="./pictures/ps.png" alt="">
+                    <img src="./pictures/react-brands.svg" alt="">
+                </div>
+            </div>
         </section>
         <section id='works'>
             <h1>projects</h1>
+            <div class="wrapper-cards">
+                <div class="flex-cards">
+                    <a href="https://nick-soehner.github.io/tavern/" target="_blank" rel="noopener noreferrer">
+                        <div class="card">
+                            <img src="./pictures/tavern.PNG" alt="">
+                            <div class="textbox">
+                                <h1>The Tavern</h1>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://nick-soehner.github.io/movie-search-js/" target="_blank" rel="noopener noreferrer">
+                        <div class="card">
+                            <img src="./pictures/movie.PNG" alt="">
+                            <div class="textbox">
+                                <h1>Movie Search</h1>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://nick-soehner.github.io/random-rockets/" target="_blank" rel="noopener noreferrer">
+                        <div class="card">
+                            <img src="./pictures/rockets.PNG" alt="">
+                            <div class="textbox">
+                                <h1>Random Rockets</h1>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://nick-soehner.github.io/better-calculator/" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="card">
+                            <img src="./pictures/calculator.PNG" alt="">
+                            <div class="textbox">
+                                <h1>The Better Calculator</h1>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </section>
         <footer>
             <div class="container">
@@ -60,6 +149,7 @@
                 </div>
             </div>
         </footer>
+        <script src="./ScrollMagic.min.js"></script>
         <script src="./script.js"></script>
     </main>
 
