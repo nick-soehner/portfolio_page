@@ -43,7 +43,7 @@ header {
     top: 0;
     width: 100%;
     background-color: transparent;
-    z-index: 1000;
+    z-index: 10;
 }
 
 header .container {
@@ -66,19 +66,11 @@ header h1 {
     font-size: 1.5rem;
 }
 
-header .logo {
-    float: left;
-}
-
-header nav {
-    float: right;
-}
-
-header nav a:hover {
+header .nav a:hover {
     color: #fff;
 }
 
-header nav a::before {
+header .nav a::before {
     content: "";
     display: block;
     height: 2px;
@@ -90,7 +82,7 @@ header nav a::before {
     transition: all ease-in-out 250ms;
 }
 
-header nav a:hover::before {
+header .nav a:hover::before {
     width: 100%;
 }
 
@@ -100,17 +92,43 @@ header::after {
     clear: both;
 }
 
-header nav ul {
+header .nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-header nav li {
+header .nav li {
     display: inline-block;
     margin-left: 1.5em;
     padding-top: 0.5em;
     position: relative;
+}
+
+#menu {
+    width: 25px;
+    display: none;
+    cursor: pointer;
+}
+
+#mobile-nav {
+    position: absolute;
+    width: 100vw;
+    height: 90vh;
+    background-image: url(./pictures/background.png);
+    text-align: center;
+    z-index: 10;
+    opacity: 0;
+    animation: fade 500ms forwards;
+}
+
+#mobile-nav li {
+    margin-top: 75px;
+    font-size: 2rem;
+}
+
+#mobile-nav a:hover {
+    color: var(--blue);
 }
 
 /* =============== LANDING ===========================*/
@@ -535,17 +553,10 @@ form button {
     height: 40px;
     margin-top: 20px;
     border-radius: 25px;
-    background-color: #fff;
-    border: none;
-    color: var(--blue);
-    font-size: 1rem;
-}
-
-form button:hover {
     background-color: var(--blue);
+    border: none;
     color: #fff;
-    transform: scale(1.2);
-    transition: ease-in-out 500ms;
+    font-size: 1rem;
 }
 
 .copyright {
@@ -601,6 +612,14 @@ form button:hover {
     .about-text {
         width: 300px;
         margin: 10px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    #menu {
+        display: block;
     }
 }
 
