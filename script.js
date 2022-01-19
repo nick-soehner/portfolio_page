@@ -16,7 +16,6 @@ let controller = new ScrollMagic.Controller();
 
 let skillsScene = new ScrollMagic.Scene({
     triggerElement: "#skills",
-    duration: "100%",
     triggerHook: 0.4,
 })
 .setClassToggle(".box", "show")

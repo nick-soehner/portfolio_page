@@ -26,9 +26,9 @@
                     <ul>
                         <li><a href="./index.html">home</a></li>
                         <li><a href="#about-me">about</a></li>
-                        <li><a href="#skills">skills</a></li>
+                        <li><a href="#skills">toolbox</a></li>
                         <li><a href="#works">projects</a></li>
-                        <li><a href="./index.html">contact</a></li>
+                        <li><a href="#contact">contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -45,18 +45,20 @@
         <section id="about-me">
             <h1>about me</h1>
             <div class="container">
-                <div class="headshot">
-                    <img src="./pictures/mars.png" alt="">
-                </div>
+                <img src="./pictures/emoji.png" alt="">
                 <div class="about-text">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, id. Aliquam minus
-                        excepturi possimus voluptate a id sapiente repellat. Rem deleniti iure eligendi dolorum
-                        perferendis, at accusamus repudiandae veritatis voluptas.</p>
+                    <h2>Hi, my name is Nick!</h2>
+                    <p>
+                        I am an aspiring front end developer who likes to push the limits of technology through simple
+                        and intuitive designs. I strive for perfection in all my projects and love to make the web a
+                        prettier and a more accessible place for all.
+                    </p>
                 </div>
             </div>
         </section>
         <section id="skills">
-            <h1>skills</h1>
+            <h1>toolbox</h1>
+            <h4>always learning and expanding my toolbox</h4>
             <div class="wrapper">
                 <div class="flex-column">
                     <div class="outer-box">
@@ -102,13 +104,14 @@
         </section>
         <section id='works'>
             <h1>projects</h1>
+            <h4>my proudest projects to date!</h4>
             <div class="wrapper-cards">
                 <div class="flex-cards">
                     <a href="https://nick-soehner.github.io/tavern/" target="_blank" rel="noopener noreferrer">
                         <div class="card">
                             <img src="./pictures/tavern.PNG" alt="">
                             <div class="textbox">
-                                <h1>The Tavern</h1>
+                                <h2>The Tavern</h2>
                             </div>
                         </div>
                     </a>
@@ -116,7 +119,7 @@
                         <div class="card">
                             <img src="./pictures/movie.PNG" alt="">
                             <div class="textbox">
-                                <h1>Movie Search</h1>
+                                <h2>Movie Search</h2>
                             </div>
                         </div>
                     </a>
@@ -124,7 +127,7 @@
                         <div class="card">
                             <img src="./pictures/rockets.PNG" alt="">
                             <div class="textbox">
-                                <h1>Random Rockets</h1>
+                                <h2>Random Rockets</h2>
                             </div>
                         </div>
                     </a>
@@ -133,24 +136,28 @@
                         <div class="card">
                             <img src="./pictures/calculator.PNG" alt="">
                             <div class="textbox">
-                                <h1>The Better Calculator</h1>
+                                <h2>The Better Calculator</h2>
                             </div>
                         </div>
                     </a>
                 </div>
             </div>
         </section>
-        <footer>
+        <footer id="contact">
             <h1>contact</h1>
+            <h4>feel free to reach out. i don't bite!</h4>
             <div class="container">
                 <form action="https://formsubmit.co/soehner.nick@gmail.com" method="POST">
-                    <input type="text" name="name" placeholder="name" required>
-                    <input type="email" name="email" placeholder="email" required>
+                    <input class="name" type="text" name="first-name" placeholder="Name" required>
+                    <input class="email" type="email" name="email" placeholder="Email" required>
+                    <input type="hidden" name="_next" value="https://nick-soehner.github.io/portfolio_page/">
+                    <textarea name="comment" form="form" cols="30" rows="10" class="comment"
+                        placeholder="Message"></textarea>
                     <button type="submit">Send</button>
                 </form>
-                <div class="copyright">
-                    <h6>copyright © 2021 Nick Soehner</h6>
-                </div>
+            </div>
+            <div class="copyright">
+                <h6>copyright © 2021 Nick Soehner</h6>
             </div>
         </footer>
         <script src="./ScrollMagic.min.js"></script>
