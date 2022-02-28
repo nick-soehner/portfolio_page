@@ -367,7 +367,10 @@ header .nav li {
     width: 100%;
 }
 
-.js,
+.js {
+    width: 90%;
+}
+
 .git {
     width: 80%;
 }
@@ -377,7 +380,7 @@ header .nav li {
 }
 
 .react {
-    width: 60%;
+    width: 95%;
 }
 
 /* =============== WORKS ===========================*/
@@ -420,6 +423,11 @@ header .nav li {
     font-size: 3em;
     letter-spacing: 0.04em;
     text-shadow: #5e5e5e 3px 2px;
+} 
+
+#works p {
+    font-size: 1.5em;
+    margin-top: 10px;
 }
 
 .wrapper-cards {
@@ -459,7 +467,7 @@ header .nav li {
 }
 
 .card:hover img {
-    opacity: 0.4;
+    opacity: 0.3;
 }
 
 .card .textbox {
